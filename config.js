@@ -29,6 +29,7 @@ global.myweb = "Enter Your Any Website Profile Link Here"
 global.footer = "©\t" + "Enter Your Watermark Here"
 global.prefa = ['-'] // single prefix
 global.themeemoji = "🎐"
+global.autoBio = "$mode : $time ⌚ || $date 🗓️ || $botname" // Leave it as it is if you didn't understood!
 global.socialText = `*⪧⪢ Please join this group for by bot's announcement.*`
 global.socialLink = `*⪧⪢ https://chat.whatsapp.com/HshHS6kHF9NHnA9lfMwwSM 💝*`
 
@@ -52,9 +53,13 @@ global.greet4 = "Good night 😴" // after 8:30 PM
 
 
 //--------------- Tip ----------------\\
-global.tip1 = `Type *${prefa}info* for more information....`
-global.tip2 = `Type *${prefa}settings* to commit changes in the bot.`
-global.tip3 = `If you got a bug or error, then please report to developer asap by *${prefa}report* command.`
+global.Tips = [
+`Type *$prefix info* for more information...`,
+`Type *$prefix settings* to commit changes in the bot.`,
+`If you got a bug or error, then please report to developer asap by *$prefix report* command.`,
+"if you want only admins could use this bot, type *$prefix only_admin*.",
+"You can change your prefix type to single prefix or multi prefix, just type *$prefix singlePrefix* or *$prefix multiPrefix* or *$prefix allPrefix*"
+]
 
 //--------------- Menu images ----------------\\
 global.nullImage = fs.readFileSync('./AnyaPikaMedia/Anyatestpic.jpg')
